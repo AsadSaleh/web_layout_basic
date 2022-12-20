@@ -8,18 +8,134 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <main class="m-auto w-1/2">
-      <h1 class="text-3xl font-bold text-blue-500">Hello There 👋😄</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/journey">Journey</a>
-        <a href="/impact">Impact</a>
-      </nav>
-      <p>
-        Hello There, welcome to my blog. In this website, I will tell you more
-        about myself.
-      </p>
-    </main>
+    <nav class="nav">
+      <div class="logo">LOGO</div>
+      <div class="menu">
+        <div class="menu-item">Menu 1</div>
+        <div class="menu-item">Menu 2</div>
+        <div class="menu-item">Menu 3</div>
+        <div class="menu-item">Menu 4</div>
+      </div>
+    </nav>
+    <!-- bagian 1: start -->
+    <div class="parent">
+      <div>
+        <span class="text-kecil">2020 EDF IMPACT REPORT</span>
+        <br />
+        <span class="text-besar"
+          >Rebuild Better
+          <div class="ball"></div
+        ></span>
+      </div>
+    </div>
+    <!-- bagian 1: end -->
+    <!-- bagian 2: start -->
+    <div class="grid-container">
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <img src="https://picsum.photos/200" />
+      <!-- <div class="grid-item">Misalnya apa 1</div>
+      <div class="grid-item">Misalnya apa 2</div>
+      <div class="grid-item">Misalnya apa 3</div>
+      <div class="grid-item">Misalnya apa 4</div>
+      <div class="grid-item">Misalnya apa 5</div>
+      <div class="grid-item">Misalnya apa 6</div>
+      <div class="grid-item">Misalnya apa 7</div>
+      <div class="grid-item">Misalnya apa 8</div>
+      <div class="grid-item">Misalnya apa 9</div> -->
+    </div>
+    <!-- bagian 2: end -->
   </body>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* grid-template-rows: 80px 80px 80px; */
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: blue;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-item {
+      background-color: bisque;
+      border-radius: 10px;
+      padding: 4px 6px;
+    }
+    .menu-item:hover {
+      background-color: coral;
+    }
+
+    .nav {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      padding: 10px 20px;
+      background-color: white;
+      width: 100vw;
+      z-index: 10;
+    }
+
+    .section-2 {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ball {
+      width: 20px;
+      height: 20px;
+      background-color: darkgreen;
+      position: absolute;
+      right: -20px;
+      top: 20px;
+    }
+    .parent {
+      background-image: url(https://impact2020.edf.org/wp-content/uploads/2020/11/intro_chapterBackground-01-1536x853.jpg);
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      /* mengatur positioning di sumbu-horizontal */
+      justify-content: center;
+
+      /* mengatur positioning di sumbu-vertical */
+      align-items: center;
+
+      text-align: center;
+    }
+    .child {
+      background-color: green;
+      text-align: center;
+    }
+    .text-kecil {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 3px;
+    }
+    .text-besar {
+      font-size: 84px;
+      line-height: 67px;
+      position: relative;
+    }
+  </style>
 </html>
